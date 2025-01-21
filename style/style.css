@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 .quicksand-font {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
 }
 /* =========================================================================== */
@@ -28,6 +30,14 @@ body{
 }
 .box-margin{
     margin: 1.25rem 8.75rem;
+}
+
+/*================= Button Hover Style Section =====================*/
+.header-btn:hover{
+    background-color: #FF6700;
+    color: #000;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 
@@ -83,6 +93,7 @@ nav{
     color: #FFFFFF;
     border-radius: 12px;
     cursor: pointer;
+    transition: all .7s ease;
 }
 .menu-toggle{
     display: none;
@@ -123,6 +134,79 @@ nav{
     border-radius: 12px;
     cursor: pointer;
 }
+/*====================== Curriculum Section =========================*/
+.curriculum{
+    margin: 0 8.8rem;
+    background-image: url("../assets/bg.png");
+    
+}
+.curriculum > h1{
+    font-size: 2.9rem;
+    font-weight: bold;
+    margin: 3.7rem 0 5rem 0;
+    color: #000000;
+}
+.curriculum-carts{
+    gap: 1.75rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.cart{
+    border-radius: 18px;
+}
+#cart1{
+    background: linear-gradient(to bottom, #DEF5FF 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+#cart2{
+    background: linear-gradient(to bottom, #FFF4DC 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+#cart3{
+    background: linear-gradient(to bottom, #EEE1FF 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+.cart-image {
+    margin: 3.3rem 0 2rem 0;
+}
+.cart > h2{
+    font-size: 1.5rem;
+    color: #202020;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.cart > p{
+    font-size: .9rem;
+    font-family: "Raleway", serif;
+    color: #808080;
+    font-weight: 500;
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
+}
+.cart > h6{
+    font-size: 15px;
+    color: #64C8FF;
+    font-weight: bold;
+    line-height: 1.75rem;
+    margin-bottom: 3.6rem;
+}
+.btn-slide{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: orange;
+}
+#curriculum-slide{
+    margin-bottom: 3.75rem;
+}
+.btn-slide > i{
+    font-size: 24x;
+    font-weight: 700;
+}
+
+
 
 
 
