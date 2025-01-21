@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* =========================================================================== */
 *{
     margin: 0;
     padding: 0;
@@ -7,15 +16,164 @@ body{
 }
 
 
-
-/* Shared Style */
+/*========== Shared Style =======================*/
 .max-width{
     max-width: 80%;
 }
 .text-align{
     text-align: center;
 }
+.display-flex{
+    display: flex;
+}
+.box-margin{
+    margin: 1.25rem 8.75rem;
+}
 
 
 
-/* Header Section */
+/*================= Header Section =====================*/
+nav{
+    margin: 1.25rem 8.75rem;
+    justify-content: space-between;
+}
+.logo-title{
+    margin: 1rem 0 .8rem .7rem;
+    font-size: 2rem;
+}
+/* Menu List Section */
+.menu{
+    margin: 1rem 0;
+}
+.nav-links{
+    list-style: none;
+    gap: 2rem;
+}
+.nav-item{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+.nav-links > li > a{
+    text-decoration: none;
+}
+#home{
+    font-weight: bold;
+    color: orange;
+}
+#about{
+    color: skyblue;
+    font-weight: 500;
+}
+#facility{
+    color: #05D4DF;
+}
+
+#admission{
+    color: #5D58EF;
+}
+/* Nav Button */
+.header-btn{
+    padding: .6rem 3.5rem;
+    margin: 6px 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border: none;
+    background-color: orange;
+    color: #FFFFFF;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.menu-toggle{
+    display: none;
+}
+/*======================== Banner Section ==================*/
+.banner{
+    margin: 0 8.8rem;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.banner-container > h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 3.8rem;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+#title1{
+    color: orange;
+}
+#title2{
+    color: skyblue;
+}
+.banner-container > p{
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+.banner-container > button{
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 10px 45px;
+    background-color: black;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+
+
+/*====================== Responsive Section =========================*/
+@media screen and (max-width: 567px) {
+    /* Nav Section */
+    .menu{
+        display:none;
+    }
+    .logo-title{
+        display: none;
+    }
+    nav{
+        margin: .7rem 1rem;
+        justify-content: space-between;
+    }
+    .header-btn{
+        display: none;
+    }
+    .menu-toggle{
+        display: inline;
+        font-size: 1.7rem;
+        border: none;
+        background-color: #F7F7F7;
+        cursor: pointer;
+    }
+    /* Banner Section */
+    .banner{
+        margin: .5rem 2rem 0 1rem;
+        flex-direction: column-reverse;
+        gap: 1.25rem;
+    }
+    .banner-container{
+        text-align: center;
+    }
+    .banner-img{
+        width: 100%;
+        height: auto;
+    }
+    .banner-container > h1{
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.2;
+        color: black;
+        margin-bottom: 1.1rem;
+    }
+    .banner-container > p{
+        font-size: .9rem;
+        line-height: 1.5;
+        color: black;
+        margin-bottom: 1.1rem;
+    }
+}
